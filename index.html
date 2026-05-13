@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agricultura de Precisión</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#AC263A",
+        secondary: "#B38E5D",
+        tertiary: "#999999",
+        dark: "#0f172a",
+        dark2: "#1e293b",
+        light: "#f4f6f9"
+      },
+      fontFamily: {
+        headline: ["Manrope"],
+        body: ["Inter"]
+      }
+    }
+  }
+}
+</script>
+
+</head>
+
+<body class="bg-light font-body">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-center">
+    <img 
+      src="https://raw.githubusercontent.com/drsamueladmin-ui/resource/d75ba2ff909e1e7c6c4fc3ac6173af191f8dd24e/Logo_Web_UPCHMX_06.svg"
+      class="h-14 object-contain"
+      alt="Logo Universidad Popular de la Chontalpa"
+    >
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="relative min-h-screen flex items-center overflow-hidden">
+
+  <!-- Fondo -->
+  <div class="absolute inset-0">
+    <img 
+      class="w-full h-full object-cover"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAklklT-Zw8bjvHufxn9oz4uLwiF-Sdx2abl3WtVDTYYhi_7kDKVHpP_Tc3QaSpnTGVwo30Yj22l6W9ROHOw4GKh6IUhWtZ8dGVuqAoYZ-CnOdPOD63QcuFpfok0OptvHkz7SIQ384UeF9jYjbm7poj_NsMa3E25eBjckHqNzdR4FDWem1QtI4l4gc8wT8XUQ0M57a1lAyeW7N4b9Yo0_kFoRLarqZ7uL_NlKqHOc7xFefcxn765UQHDALznSIjPuYjyX94qngpvirT"
+      alt=""
+    >
+    <div class="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-transparent"></div>
+  </div>
+
+  <!-- Contenido -->
+  <div class="relative z-10 max-w-6xl mx-auto px-6">
+    <div class="max-w-xl space-y-6 text-white">
+
+      <div class="inline-block px-4 py-1 rounded-full bg-primary/20 border border-primary/40">
+        <span class="text-white text-xs font-bold uppercase tracking-widest">
+          Primer Curso
+        </span>
+      </div>
+
+      <h1 class="font-headline text-5xl md:text-6xl font-extrabold leading-tight">
+        <br>
+        <span class="text-secondary">Agricultura de Precisión</span>
+      </h1>
+
+      <p class="text-lg text-gray-200">
+        Domina la Agricultura de Precisión y lleva tus cultivos al siguiente nivel.
+      </p>
+
+      <p class="text-gray-300">
+        Aprende a utilizar drones, sensores, SIG y análisis de datos para optimizar la producción agrícola.
+      </p>
+      <a href="#registrationForm"
+        class="inline-block bg-primary text-white font-headline font-bold py-5 px-6 rounded-2xl hover:bg-secondary transition-all shadow-lg">
+        Inscríbete ahora
+      </a>
+
+    </div>
+  </div>
+
+</section>
+<!-- ================= FORM + DETAILS SECTION ================= -->
+<section id="formSection" class="py-16 bg-light">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- 2-column layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+      <!-- ================= DETAILS (LEFT) ================= -->
+      <div class="space-y-8">
+
+        <!-- Title -->
+        <div>
+          <h2 class="text-3xl font-headline font-extrabold text-primary text-center lg:text-left">
+            Detalles del curso
+          </h2>
+          <p class="text-tertiary text-sm mt-2 text-center lg:text-left">
+            Información clave para tu participación
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="space-y-6">
+
+          <!-- Fecha -->
+          <div class="flex items-center gap-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
+              <span class="material-symbols-outlined text-secondary">calendar_today</span>
+            </div>
+            <div>
+              <p class="text-tertiary text-xs uppercase tracking-widest font-bold">Fecha</p>
+              <p class="text-dark font-headline font-bold text-lg">23 y 24 de abril de 2026</p>
+            </div>
+          </div>
+
+          <!-- Ubicación -->
+          <div class="flex items-center gap-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
+              <span class="material-symbols-outlined text-secondary">location_on</span>
+            </div>
+            <div>
+              <p class="text-tertiary text-xs uppercase tracking-widest font-bold">Ubicación</p>
+              <p class="text-dark font-headline font-bold text-lg">UPCH Auditorio C</p>
+            </div>
+          </div>
+
+          <!-- Horario -->
+          <div class="flex items-center gap-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
+              <span class="material-symbols-outlined text-secondary">schedule</span>
+            </div>
+            <div>
+              <p class="text-tertiary text-xs uppercase tracking-widest font-bold">Horario</p>
+              <p class="text-dark font-headline font-bold text-lg">09:00 - 14:00 hrs</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ================= FORM (RIGHT) ================= -->
+      <div class="w-full max-w-xl mx-auto lg:mx-0 bg-white rounded-2xl shadow-xl shadow-black/5 p-8">
+
+        <h2 class="text-3xl font-headline font-extrabold text-primary mb-8 text-center lg:text-left">
+          Inscripción al curso
+        </h2>
+
+        <form id="registrationForm" class="space-y-6">
+
+          <!-- Row 1 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label for="nombre" class="text-sm font-bold text-primary">Nombre</label>
+              <input id="name" required
+                class="w-full bg-light border border-gray-200 rounded-xl focus:ring-2 focus:ring-secondary py-4 px-4"
+                placeholder="Tu nombre" type="text"/>
+            </div>
+
+            <div class="space-y-2">
+              <label for="apellidoPaterno" class="text-sm font-bold text-primary">Apellido paterno</label>
+              <input id="lastname" required
+                class="w-full bg-light border border-gray-200 rounded-xl focus:ring-2 focus:ring-secondary py-4 px-4"
+                placeholder="Apellido paterno" type="text"/>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label for="apellidoMaterno" class="text-sm font-bold text-primary">Apellido materno</label>
+              <input id="lastmater" required
+                class="w-full bg-light border border-gray-200 rounded-xl focus:ring-2 focus:ring-secondary py-4 px-4"
+                placeholder="Apellido materno" type="text"/>
+            </div>
+
+            <div class="space-y-2">
+              <label for="institucion" class="text-sm font-bold text-primary">Institución / Organización</label>
+              <input id="institute" required
+                class="w-full bg-light border border-gray-200 rounded-xl focus:ring-2 focus:ring-secondary py-4 px-4"
+                placeholder="Nombre de empresa o escuela" type="text"/>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label for="cargo" class="text-sm font-bold text-primary">Cargo / Puesto</label>
+              <input id="position" required
+                class="w-full bg-light border border-gray-200 rounded-xl focus:ring-2 focus:ring-secondary py-4 px-4"
+                placeholder="Tu rol actual" type="text"/>
+            </div>
+
+            <div class="space-y-2">
+              <label for="email" class="text-sm font-bold text-primary">Correo electrónico</label>
+              <input id="email" required
+                class="w-full bg-light border border-gray-200 rounded-xl focus:ring-2 focus:ring-secondary py-4 px-4"
+                placeholder="email@ejemplo.com" type="email"/>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="space-y-2">
+            <label for="telefono" class="text-sm font-bold text-primary">Teléfono</label>
+            <input id="phone" required
+              class="w-full bg-light border border-gray-200 rounded-xl focus:ring-2 focus:ring-secondary py-4 px-4"
+              placeholder="000 000 0000" type="tel"/>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit"
+            class="w-full bg-primary text-white font-headline font-bold py-5 rounded-2xl hover:bg-secondary transition-all shadow-lg">
+            Inscribirme ahora
+          </button>
+
+          <!-- Message -->
+          <p id="formMessage" class="text-center text-sm hidden"></p>
+
+          <p class="text-center text-xs text-tertiary">
+            Al inscribirte aceptas nuestras políticas de privacidad y términos del curso.
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ================= CONTEXT SECTION ================= -->
+<section class="py-24 bg-white" id="context">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Text Content -->
+      <div>
+        <h2 class="font-headline font-bold text-4xl text-primary leading-tight mb-8">
+          La agricultura moderna enfrenta grandes desafíos
+        </h2>
+
+        <div class="space-y-6 text-tertiary leading-relaxed text-lg">
+          <p>
+            El agotamiento de los suelos y la variabilidad del cambio climático exigen nuevas formas de producir. 
+            Ya no basta con los métodos tradicionales; la eficiencia es la clave para la supervivencia.
+          </p>
+
+          <p class="font-medium text-primary">
+            La Agricultura de Precisión ofrece la solución definitiva: gestionar la variabilidad espacial y temporal 
+            para aplicar los insumos exactos, en el momento preciso y en el lugar adecuado.
+          </p>
+        </div>
+
+        <!-- Stats -->
+        <div class="mt-10 grid grid-cols-2 gap-4">
+          <div class="p-5 border-l-4 border-secondary bg-light rounded-xl">
+            <p class="text-3xl font-headline font-black text-primary">40%</p>
+            <p class="text-sm text-tertiary">Mejora en eficiencia de recursos</p>
+          </div>
+
+          <div class="p-5 border-l-4 border-secondary bg-light rounded-xl">
+            <p class="text-3xl font-headline font-black text-primary">25%</p>
+            <p class="text-sm text-tertiary">Aumento promedio en rendimientos</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Content -->
+      <div class="relative">
+        <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+          <img
+            class="w-full h-full object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7bw4twIfPnnXd41tC_PuM10TsevpdShG8PkMiMMtcKTAdGUp_sedzxtoAMZ-1gytjWgzNgC3Vr8u4zyjV7jekPu8RUKPIqpXTLvLN4-gPi9qfl4L7vEQ3tO3gyajzMd1e_Nc5bmfQiHikVsCGEsHVvKxTuoz_mUHNly5PSjO8bhSwcsCNZrviukg3kaCDSEwBCdSFMn2iyRHCpoePw7Hdc_v_Ad43CTWbR3fF2_neEYdc0Hn9G1S9h4kMSxYJbakbyEnj7YitwY0p"
+            alt="Mapa digital agrícola"
+          />
+        </div>
+
+        <!-- Floating Quote -->
+        <div class="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-2xl shadow-xl max-w-xs hidden md:block">
+          <p class="font-headline font-bold italic">
+            "La tecnología es el nuevo fertilizante del siglo XXI."
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ================= EXPERTS SECTION ================= -->
+<section class="py-24 bg-white" id="experts">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+      <div>
+        <h2 class="font-headline font-bold text-3xl text-primary">
+          Aprende de expertos
+        </h2>
+        <p class="text-tertiary mt-2">
+          Líderes en tecnología agrícola e investigación
+        </p>
+      </div>
+    </div>
+    <!-- Speakers -->
+    <div class="mt-10 mb-12">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center">
+
+        <div class="w-24 h-24 md:w-28 md:h-28 rounded-full p-1 bg-white border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition">
+          <img src="https://raw.githubusercontent.com/drsamueladmin-ui/resource/refs/heads/main/poniente1.png"
+            alt="Ponente 1"
+            class="w-full h-full rounded-full object-cover"/>
+        </div>
+
+        <div class="w-24 h-24 md:w-28 md:h-28 rounded-full p-1 bg-white border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition">
+          <img src="https://raw.githubusercontent.com/drsamueladmin-ui/resource/refs/heads/main/poniente2.png"
+            alt="Ponente 2"
+            class="w-full h-full rounded-full object-cover"/>
+        </div>
+
+        <div class="w-24 h-24 md:w-28 md:h-28 rounded-full p-1 bg-white border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition">
+          <img src="https://raw.githubusercontent.com/drsamueladmin-ui/resource/refs/heads/main/poniente3.png"
+            alt="Ponente 3"
+            class="w-full h-full rounded-full object-cover"/>
+        </div>
+
+        <div class="w-24 h-24 md:w-28 md:h-28 rounded-full p-1 bg-white border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition">
+          <img src="https://raw.githubusercontent.com/drsamueladmin-ui/resource/refs/heads/main/poniente4.png"
+            alt="Ponente 4"
+            class="w-full h-full rounded-full object-cover"/>
+        </div>
+
+        <div class="w-24 h-24 md:w-28 md:h-28 rounded-full p-1 bg-white border border-gray-200 shadow-md hover:shadow-lg hover:scale-105 transition">
+          <img src="https://raw.githubusercontent.com/drsamueladmin-ui/resource/refs/heads/main/poniente5.png"
+            alt="Ponente 5"
+            class="w-full h-full rounded-full object-cover"/>
+        </div>
+
+      </div>
+    </div>
+    <!-- Logos / Partners -->
+    <div class="flex flex-wrap gap-10 justify-center items-center opacity-80 grayscale hover:grayscale-0 transition">
+
+      <img class="h-14 md:h-16 object-contain"
+        src="https://raw.githubusercontent.com/drsamueladmin-ui/resource/refs/heads/main/inifap.png"
+        alt="INIFAP"/>
+
+      <img class="h-14 md:h-16 object-contain"
+        src="https://raw.githubusercontent.com/drsamueladmin-ui/resource/refs/heads/main/Logo_COLPOS.png"
+        alt="Colegio de Postgraduados Tabasco"/>
+
+      <img class="h-14 md:h-16 object-contain"
+        src="https://raw.githubusercontent.com/drsamueladmin-ui/resource/refs/heads/main/Tecnologico-Huimanguillo.png"
+        alt="Instituto Tecnológico de Huimanguillo"/>
+
+      <img class="h-14 md:h-16 object-contain"
+        src="https://raw.githubusercontent.com/drsamueladmin-ui/resource/52b6cf1b5d55af1f84ec505cf9417adb90f398be/Logo_Web_UPCHMX_06.svg"
+        alt="Universidad Popular de la Chontalpa"/>
+
+    </div>
+
+  </div>
+</section>
+<!-- ================= RESULTS SECTION ================= -->
+<section class="py-24 relative bg-primary overflow-hidden">
+
+  <!-- Background Glow -->
+  <div class="absolute top-0 right-0 w-96 h-96 bg-secondary/20 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+
+  <div class="max-w-6xl mx-auto px-6 relative z-10">
+
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="font-headline font-bold text-4xl text-white">
+        Lo que podrás lograr
+      </h2>
+      <p class="text-white/70 mt-4">
+        Resultados tangibles al finalizar el taller
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-2xl hover:scale-105 hover:shadow-xl transition">
+        <span class="material-symbols-outlined text-secondary text-3xl mb-4"
+              style="font-variation-settings: 'FILL' 1;">
+          layers
+        </span>
+        <h4 class="text-white font-bold text-xl mb-2">
+          Mapas de Variabilidad
+        </h4>
+        <p class="text-white/70 text-sm">
+          Generar mapas precisos para identificar zonas de alto y bajo rendimiento.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-2xl hover:scale-105 hover:shadow-xl transition">
+        <span class="material-symbols-outlined text-secondary text-3xl mb-4"
+              style="font-variation-settings: 'FILL' 1;">
+          monitoring
+        </span>
+        <h4 class="text-white font-bold text-xl mb-2">
+          Análisis de Datos
+        </h4>
+        <p class="text-white/70 text-sm">
+          Interpretar datos de sensores remotos para la toma de decisiones críticas.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-2xl hover:scale-105 hover:shadow-xl transition">
+        <span class="material-symbols-outlined text-secondary text-3xl mb-4"
+              style="font-variation-settings: 'FILL' 1;">
+          flight_takeoff
+        </span>
+        <h4 class="text-white font-bold text-xl mb-2">
+          Operación de Drones
+        </h4>
+        <p class="text-white/70 text-sm">
+          Conceptos fundamentales para el vuelo y captura de imágenes multiespectrales.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- For you === -->
+<section class="py-24 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="font-headline font-bold text-3xl text-primary">
+       ¿Este curso es para ti?
+      </h2>
+      <p class="text-on-surface-variant mt-4">
+        Da el siguiente paso y transforma la manera en que produces con tecnología de precisión.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+
+      <!-- Card 1 -->
+      <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition-all group border border-outline-variant">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-4 group-hover:text-primary transition-colors">
+          agriculture
+        </span>
+        <h3 class="font-headline font-bold text-xl mb-2 text-primary">
+          Productores
+        </h3>
+        <p class="text-on-surface-variant text-sm">
+          Buscando maximizar la rentabilidad y eficiencia de sus parcelas.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition-all group border border-outline-variant">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-4 group-hover:text-primary transition-colors">
+          school
+        </span>
+        <h3 class="font-headline font-bold text-xl mb-2 text-primary">
+          Estudiantes
+        </h3>
+        <p class="text-on-surface-variant text-sm">
+          Interesados en especializarse en las tecnologías agrícolas del futuro.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition-all group border border-outline-variant">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-4 group-hover:text-primary transition-colors">
+          engineering
+        </span>
+        <h3 class="font-headline font-bold text-xl mb-2 text-primary">
+          Ingenieros
+        </h3>
+        <p class="text-on-surface-variant text-sm">
+          Que necesitan actualizar y fortalecer sus herramientas de análisis SIG.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition-all group border border-outline-variant">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-4 group-hover:text-primary transition-colors">
+          biotech
+        </span>
+        <h3 class="font-headline font-bold text-xl mb-2 text-primary">
+          Investigadores
+        </h3>
+        <p class="text-on-surface-variant text-sm">
+          Enfocados en la gestión y análisis de datos masivos en campo.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center space-y-4">
+      <a href="#formSection"
+        class="inline-block bg-primary text-white font-headline font-bold py-5 px-6 rounded-2xl hover:bg-secondary transition-all shadow-lg">
+        Quiero inscribirme ahora
+      </a>
+
+      <p class="text-xs text-tertiary">
+        • Cupos limitados • Asegura tu lugar hoy
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="bg-white border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 py-6 text-center">
+    <p class="text-sm text-tertiary">
+      © 2026 Universidad Popular de la Chontalpa
+    </p>
+  </div>
+</footer>
+
+<!-- ================= JS ================= -->
+<script>
+const form = document.getElementById("registrationForm");
+const message = document.getElementById("formMessage");
+const button = form.querySelector("button");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const data = {
+    name: document.getElementById("name").value.trim(),
+    lastname: document.getElementById("lastname").value.trim(),
+    lastmater: document.getElementById("lastmater").value.trim(),
+    institute: document.getElementById("institute").value.trim(),
+    position: document.getElementById("position").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    phone: document.getElementById("phone").value.trim()
+  };
+
+  // Validation
+  if (!data.name || !data.lastname || !data.email) {
+    showMessage("Por favor completa los campos obligatorios.", "error"); 
+    return;
+  }
+
+  // Disable button (prevent double submit)
+  button.disabled = true;
+  button.classList.add("opacity-50", "cursor-not-allowed");
+  showMessage("Enviando...", "cargando");
+
+  // Send to Apps Script
+  google.script.run
+    .withSuccessHandler(res => {
+      showMessage("Registro enviado correctamente.", "success");
+      form.reset();
+
+      button.disabled = false;
+      button.classList.remove("opacity-50", "cursor-not-allowed");
+    })
+    .withFailureHandler(err => {
+      showMessage("Ocurrió un error. Intenta nuevamente.", "error");
+
+      button.disabled = false;
+      button.classList.remove("opacity-50", "cursor-not-allowed");
+    })
+    .saveUser(data);
+});
+
+function showMessage(text, type) {
+  message.classList.remove("hidden", "text-red-600", "text-green-600", "text-gray-600");
+
+  if (type === "success") message.classList.add("text-green-600");
+  else if (type === "error") message.classList.add("text-red-600");
+  else message.classList.add("text-gray-600");
+
+  message.textContent = text;
+}
+</script>
+
+</body>
+</html>
